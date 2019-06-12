@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Students</h1>
+  <ul>
+    {% for i, student in enumerate(students) %}
+      <li>
+        <a href="{{ url_for('student', id=i+1) }}">{{ student }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

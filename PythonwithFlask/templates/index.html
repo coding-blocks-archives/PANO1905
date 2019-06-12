@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello World !</h1>
+  <h3>Navigation</h3>
+  <ul>
+    <li>
+      <a href="{{ url_for('students') }}">Students</a>
+    </li>
+  </ul>
+  <table>
+    {% for key, value in info.items() %}
+      <tr>
+        <td>{{ key }}</td>
+        <td>{{ value }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
