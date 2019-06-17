@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from decouple import config
 app = Flask("app")
 
 students_data = ['jatin', 'mandeep', 'harshita']
